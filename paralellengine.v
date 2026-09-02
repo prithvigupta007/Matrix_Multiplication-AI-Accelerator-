@@ -61,8 +61,9 @@ module mat_par #(parameter N=4, DW=8)(
     endgenerate
 
     // FSM control
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    wire rst = ~rst_n ; 
+    always @(posedge clk or posedge  rst) begin
+        if (rst) begin
             state <= IDLE;
             done  <= 0;
             en    <= 0;

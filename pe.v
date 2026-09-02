@@ -14,7 +14,7 @@ module pe (
     assign mult_result = a * b;
 
    
-    always @(posedge clk or posedge rst_n) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             acc_out <= 20'd0;
         end

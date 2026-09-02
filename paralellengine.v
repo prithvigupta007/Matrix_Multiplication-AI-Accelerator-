@@ -10,7 +10,7 @@ module mat_par #(parameter N=4, DW=8)(
 );
 
     reg en, clear_acc;
-    reg [2:0] k;
+    reg [1:0] k;
     reg [1:0] state;
 
     localparam IDLE=0, INIT=1, COMPUTE=2, DONE=3;

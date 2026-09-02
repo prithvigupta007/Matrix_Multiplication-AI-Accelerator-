@@ -23,6 +23,7 @@ module bcd_segment7_1digit(bcd, seg);
              4'd13 : seg = 7'b1000010;
              4'd14 : seg = 7'b0110000;
              4'd15 : seg = 7'b0111000;
+               default : seg = 7'b1111111 ; 
         endcase
     end
   

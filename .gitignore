@@ -1,0 +1,42 @@
+# ModelSim / Questa simulation files
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+*.log
+
+# Compiled simulation libraries
+*.lib
+*.dll
+
+# Simulation-generated files
+*.bak
+*.jou
+
+# Vivado generated files
+.vivado/
+vivado/
+*.xpr
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+
+# Quartus generated files
+db/
+incremental_db/
+*.qpf
+*.qsf
+*.qws
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

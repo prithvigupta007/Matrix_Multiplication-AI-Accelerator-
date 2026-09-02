@@ -1,4 +1,4 @@
-module matmul_par #(parameter N=4, DW=8)(
+module mat_par #(parameter N=4, DW=8)(
     input clk,
     input rst_n,
     input start,

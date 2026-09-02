@@ -9,13 +9,13 @@ module pe (
 );
 
    
-    wire [15:0] mult_result;
-
+    wire [19:0] mult_result;
+    wire rst = ~rst_n ; 
     assign mult_result = a * b;
 
    
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    always @(posedge clk or posedge rst_n) begin
+        if (rst) begin
             acc_out <= 20'd0;
         end
         else if (clear_acc) begin

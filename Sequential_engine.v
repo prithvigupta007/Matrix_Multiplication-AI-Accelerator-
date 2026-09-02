@@ -71,10 +71,10 @@ module matmul_seq #(
 
  
     // FSM
-    
-    always @(posedge clk or negedge rst_n) begin
+    wire rst = ~rst_n ; 
+    always @(posedge clk or posedge rst) begin
 
-        if (!rst_n) begin
+        if (rst) begin
             state     <= IDLE;
             done      <= 1'b0;
             en        <= 1'b0;

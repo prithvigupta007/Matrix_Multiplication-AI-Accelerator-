@@ -30,7 +30,7 @@ mat_seq seq{
 mat_par par{ 
 .clk(clk),
 .rst_n(rst_n),
-.en(start),
+.start(start),
 .A_flat(A_in),
 .B_flat(B_in),
 .C_flat(C_par),

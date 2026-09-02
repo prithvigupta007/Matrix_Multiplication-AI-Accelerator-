@@ -91,6 +91,7 @@ module mat_par #(parameter N=4, DW=8)(
 
                     if (k < N-1)
                         k <= k + 1;
+                       state <= COMPUTE ; 
                     else
                         state <= DONE;
                 end

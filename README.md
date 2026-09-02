@@ -1,4 +1,4 @@
-# Systolic-Array
+
 # RTL Matrix Multiplication Accelerator (4×4)
 
 ## Overview

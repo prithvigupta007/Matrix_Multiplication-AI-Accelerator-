@@ -6,7 +6,7 @@ This project implements a **4×4 matrix multiplication accelerator** using **Ver
 
 Two architectures are designed:
 - **Sequential Architecture** – low area, higher latency  
-- **Parallel Systolic Array** – high performance, higher area  
+- **Parallel  Array** – high performance, higher area  
 
 ---
 
